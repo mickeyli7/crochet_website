@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'BrandierTrial';
+    src: url('fonts/BrandierTrial-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrandierTrial';
+    src: url('fonts/BrandierTrial-Thin.otf') format('opentype');
+    font-weight: normal;
+}
+/* https://css-tricks.com/snippets/css/using-font-face-in-css/ , hier heb ik de code voor de @font-face tag vandaan, omdat het zelf niet lukte*/
+
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'BrandierTrial';
+    font-weight: bold;
+}
+
+p, li {
+    font-family: 'BrandierTrial';
+    font-weight: normal;
+    margin-bottom: 2%;
+}
+
+img  {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    background-color: lightblue;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: lightcoral;
+    color:aliceblue;
+    padding: 2%;
+    text-align: center;
+}
+
+nav ul {
+    font-size: 1.3em;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-self: center;
+    padding-left: 2%;
+ }
+
+ nav ul li {
+    margin-right: 3%;
+ }
+
+ nav a {
+    text-decoration: none;
+    color: lightcoral;
+    font-weight: bold;
+}
+
+main, div {
+    margin: 5%;
+}
+
+.first-column {
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    background-color: aliceblue;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+ }
+
+ .flex-container>div {
+    background-color: aliceblue;
+    width: 40%;
+    margin-bottom: 5%;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 2%;
+}
+
+.cijfer {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.flex-container_gallery {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+ }
+
+ section.flex-container_gallery img { 
+    width: 20%;
+ }
+
+ .flex-container_gallery:first-of-type > img:first-child {
+    width: 2.5%; /* Adjust the width as desired */
+    /* Other styles if needed */
+ }
+
+ .flex-container_gallery:first-of-type > img:nth-child(2) {
+    width: 10%; /* Adjust the width as desired */
+    /* Other styles if needed */
+}
+
+
+.flex-container_tutorial {
+    margin-top: 5%;
+    width: 60%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+.werkgallery img {
+    width: 15%;
+    margin: 3%;
+    border-width: 0.5em;
+    border-style: dashed;
+    border-color: lightcoral;
+}
+
+@keyframes buttonScale {
+    0% {
+        transform: scale(1); /* Start with normal size */
+    }
+    50% {
+        transform: scale(1.1); /* Scale up to 1.2 times original size at halfway point */
+    }
+    100% {
+        transform: scale(1.25); /* Return to normal size at the end */
+    }
+}
+
+.scroll-to-top {
+    display: block;
+    background-color: lightcoral;
+    color: #fff;
+    padding: 1% 2%;
+    border-radius: 2em;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    width: 15%;
+ }
+
+ .scroll-to-top:hover {
+    background-color:cornflowerblue;
+    animation: buttonScale 1s ease forwards;
+}
+
+footer {
+    text-align: center;
+    background-color: lightcoral;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+
+ footer>div {
+    display: flex;
+    flex-direction: column;
+}
