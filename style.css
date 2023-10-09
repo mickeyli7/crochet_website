@@ -76,9 +76,8 @@ main, div {
     flex-direction: column;
     padding: 4%;
     background-color: aliceblue;
-    border: 1px solid #ddd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 0.1em;
 }
 
 .flex-container {
@@ -91,7 +90,6 @@ main, div {
     background-color: aliceblue;
     width: 40%;
     margin-bottom: 5%;
-    border: 1px solid #ddd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 2%;
